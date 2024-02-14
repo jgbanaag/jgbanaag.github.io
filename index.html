@@ -1,83 +1,96 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <title>Sample Web Page</title>
-    <link rel="stylesheet" href="./banaag.css">
-  </head>
+    <head>
+        <title>Sample Web Page</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
 
-  <body>
+    <body style="background-color: #ecdde6; text-align: center;">
     <a id="top"></a>
 
     <div style="float: left">
-      <p>logo</p>
+        <img src="./assets/logo.png" alt="logo" style="height: 40px; width: auto">
     </div>
 
     <div style="float: right">
-      <img src="https://cdn3.iconfinder.com/data/icons/photo-camera-ui/512/mobile-navigation-bar-menu-responsive-ui-512.png" alt="nav" style="height: 40px; width: auto"/>
+    <img src="./assets/nav_bar.png" alt="nav" style="height: 40px; width: auto;"/>
     </div>
 
-    <h2 style="color:black">My Portfolio</h2>
+    <h2 class="flex-item">My Portfolio</h2>
     <hr />
 
     <div class="flex-container1">
-      <div class="flex-item">
-          <!-- <h3>featured photo</h3> -->
-          <img src="https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg" alt="featured photo" class="feat_img"/>
-      </div>
+        <div class="parallax"></div>
 
-      <hr noshade />
-
-      <!-- https://www.w3schools.com/css/css_image_gallery.asp -->
-      <div class="flex-item">
-        <h3>Previous Projects</h3>
-        <div class="flex-container2">
-          <div class="flex-item" >
-            <h4>proj 1</h4>
-            <p>role: </p>
-            <p>details:</p>
-          </div>
-          <div class="flex-item">
-            <h4>proj 2</h4>
-            <p>role: </p>
-            <p>details:</p>
-          </div>
-          <div class="flex-item">
-            <h4>proj 3</h4>
-            <p>role: </p>
-            <p>details:</p>
-          </div>
+        <!-- https://www.w3schools.com/css/css_image_gallery.asp -->
+        <div class="flex-item">
+            <h3>Previous Projects</h3>
+            <div class="flex-container2">
+                <div class="div_box" style="flex: 20%;">
+                    <h4>Game Project for CMSC 22</h4>
+                    <img src="./assets/game_project.png" alt="proj 1" class="center_img">
+                    <p style="text-align: center;">
+                        Coded an asteroids game "Orbit Obliteration" in Java.
+                        <br>Drew pixel art used in the game.
+                    </p>
+                </div>
+                <div class="div_box" style="flex: 20%;">
+                    <h4>Personal Web Page</h4>
+                    <img src="./assets/personal_page.png" alt="proj 2" class="center_img">
+                    <p style="text-align: center;">
+                        Created a personal web page with details about myself and my hobbies.
+                        <br>Implemented JavaScript for buttons.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <div class="flex-container2">
-      <div class="flex-item">
-        <h3>Skills</h3>
-        <p>skill 1 - management</p>
-        <p>skill 2 - web programming</p>
-        <p>skill 3 - ui/ux</p>
-      </div>
+        <div class="div_box" style="flex: 20%;">
+            <h3>Skills</h3>
+            <p>
+                <strong>Communication Skills:</strong><br>
+                Facilitated effective collaboration and problem-solving within teams and fostered a collaborative work environment.
+                <br><br>
+                <strong>Project Management:</strong><br>
+                Skilled in planning, executing, and delivering projects on time.
+                <br><br>
+                <strong>Development:</strong><br>
+                Proficient in HTML, CSS, and JavaScript, and knowledgeable in server-side scripting languages such as Node.js, Python, and PHP.
+            </p>
+        </div>
 
-      <div class="flex-item">
-        <h3>Autobiography</h3>
-        <p>I am Jullianne Banaag...</p>
-      </div>
-  </div>
-
-  <hr />
-
-  <div class="flex-container3">
-    <div class="flex-item">
-      <img src="chrome://branding/content/about-logo.png" alt="featured photo" class="footer_img"/>
+        <div class="div_box" style="flex: 20%;">
+            <h3>Autobiography</h3>
+            <p>
+                I am Jullianne Francesca Banaag,
+                a BS Computer Science student from <i>Batch 2022</i>.
+                I was born on July 19, and am currently 20 years old.
+                <br><br>
+                I enjoy <i>reading manga</i>, <i>watching anime</i>, <i>playing video games</i>, and <i>crocheting</i>.
+            </p>
+        </div>
     </div>
-    <div class="flex-item">
-      <p>footer contents</p>
-      <p>personal website</p>
-      <p>copyright information</p>
-      <a href="#top">Back to top</a>
+
+    <hr />
+
+    <div class="flex-container3">
+        <div class="flex-item" style="margin-right: 10px;">
+            <img src="./assets/logo.png" alt="logo" style="height: 100px; width: auto">
+        </div>
+        <div class="flex-item">
+            <p style="font-size: small; text-align: left;">
+                <strong>Jullianne Banaag</strong><br>
+                BS Computer Science<br>
+                University of the Philippines Los Baños<br>
+                © Copyright 2024. All rights reserved.<br>
+                <a href="#top">Back to top</a>
+            </p>
+        </div>
     </div>
-  
-  </body>
+    
+    </body>
 
 </html>
